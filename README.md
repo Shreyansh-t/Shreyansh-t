@@ -33,6 +33,14 @@ I thrive at the intersection of **AI + Systems**, where smart meets snappy.
 
 ---
 
+## 🧾 Certifications
+
+- 🐳 **Docker Foundations Professional Certificate** — *Issued by Docker, Inc. in June 2025*  
+  <sub><i>Covered Docker Products, Containerization, and Deployment Best Practices</i></sub>  
+  [🔗 View Credential](https://www.linkedin.com/learning/certificates/f3e29fd25be42e5d1f845696fe232eb585729f3f26f1c1718570e937e3dbccec) <!-- Replace with actual link if available -->
+
+---
+
 ## ⚡ Fun Facts
 
 - 🔍 I can tune a caching layer like some people tune guitars.
