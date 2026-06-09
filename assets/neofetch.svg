@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="340" fill="#000000"/>
+  <rect x="1" y="1" width="898" height="338" fill="none" stroke="#00FF41" stroke-width="1" filter="url(#glow)"/>
+
+  <!-- ASCII CRT Monitor logo (left column) in #39FF14 -->
+  <text font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13" fill="#39FF14" filter="url(#glow)">
+    <tspan x="28" dy="0" y="40">  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;</tspan>
+    <tspan x="28" dy="17">  &#x2502;  &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;  &#x2502;</tspan>
+    <tspan x="28" dy="17">  &#x2502;  &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;  &#x2502;</tspan>
+    <tspan x="28" dy="17">  &#x2502;  &#x2588;&#x2588;       &#x2588;&#x2588;&#x2588;  &#x2502;</tspan>
+    <tspan x="28" dy="17">  &#x2502;  &#x2588;&#x2588;   &gt;_   &#x2588;&#x2588;&#x2588;  &#x2502;</tspan>
+    <tspan x="28" dy="17">  &#x2502;  &#x2588;&#x2588;       &#x2588;&#x2588;&#x2588;  &#x2502;</tspan>
+    <tspan x="28" dy="17">  &#x2502;  &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;  &#x2502;</tspan>
+    <tspan x="28" dy="17">  &#x2502;  &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;  &#x2502;</tspan>
+    <tspan x="28" dy="17">  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;</tspan>
+    <tspan x="28" dy="17">      &#x2502;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2502;</tspan>
+    <tspan x="28" dy="17">  &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;</tspan>
+    <tspan x="28" dy="17">  &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;</tspan>
+  </text>
+
+  <!-- Right column: user@host header -->
+  <text x="320" y="40" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="14" fill="#39FF14" filter="url(#glow)" font-weight="bold">shreyansh@portfolio</text>
+  <text x="320" y="58" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13" fill="#00FF41" filter="url(#glow)">&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</text>
+
+  <!-- Info rows -->
+  <!-- Each row: label in #008F11, value in #00FF41 -->
+  <text x="320" y="78" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">OS:        </tspan><tspan fill="#00FF41" filter="url(#glow)">PortfolioOS 4.2.0-arch</tspan>
+  </text>
+  <text x="320" y="96" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">Host:      </tspan><tspan fill="#00FF41" filter="url(#glow)">Purdue University (Data Science)</tspan>
+  </text>
+  <text x="320" y="114" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">Kernel:    </tspan><tspan fill="#00FF41" filter="url(#glow)">6.6.0-relentless</tspan>
+  </text>
+  <text x="320" y="132" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">Uptime:    </tspan><tspan fill="#00FF41" filter="url(#glow)">21 years, 171 days</tspan>
+  </text>
+  <text x="320" y="150" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">Shell:     </tspan><tspan fill="#00FF41" filter="url(#glow)">zsh 5.9 + tmux</tspan>
+  </text>
+  <text x="320" y="168" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">Editor:    </tspan><tspan fill="#00FF41" filter="url(#glow)">nvim, VS Code (when sane)</tspan>
+  </text>
+  <text x="320" y="186" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">CPU:       </tspan><tspan fill="#00FF41" filter="url(#glow)">Caffeine @ 4.2GHz (8 cores: 4 ideas + 4 execution)</tspan>
+  </text>
+  <text x="320" y="204" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">Memory:    </tspan><tspan fill="#00FF41" filter="url(#glow)">16384MiB algorithms / 32768MiB total</tspan>
+  </text>
+  <text x="320" y="222" font-family="'IBM Plex Mono','JetBrains Mono',monospace" font-size="13">
+    <tspan fill="#008F11">Focus:     </tspan><tspan fill="#00FF41" filter="url(#glow)">AI x Systems, sub-ms latency, ART trees</tspan>
+  </text>
+
+  <!-- Color palette swatches (bottom-right) -->
+  <!-- 8 small colored squares -->
+  <rect x="680" y="290" width="18" height="18" fill="#003311"/>
+  <rect x="700" y="290" width="18" height="18" fill="#005522"/>
+  <rect x="720" y="290" width="18" height="18" fill="#007733"/>
+  <rect x="740" y="290" width="18" height="18" fill="#008F11"/>
+  <rect x="760" y="290" width="18" height="18" fill="#00BB22"/>
+  <rect x="780" y="290" width="18" height="18" fill="#00FF41"/>
+  <rect x="800" y="290" width="18" height="18" fill="#39FF14"/>
+  <rect x="820" y="290" width="18" height="18" fill="#88FF88"/>
+</svg>

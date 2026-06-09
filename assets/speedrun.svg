@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glowStrong" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Trail gradients -->
+    <linearGradient id="trail1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="trail2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="trail3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="trail4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="trail5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="trail6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="trail7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="trail8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="1200" height="300" fill="#000000"/>
+  <!-- Border with glow -->
+  <rect x="1" y="1" width="1198" height="298" fill="none" stroke="#00FF41" stroke-width="1" filter="url(#glow)"/>
+
+  <!-- ── LAYER 1: PARALLAX ROAD (y=120 to y=280) ── -->
+  <!-- Line 1: y=130, dur=0.35s, dasharray="20 30" -->
+  <line x1="0" y1="130" x2="1200" y2="130" stroke="#003311" stroke-width="1" stroke-dasharray="20 30">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-50 0" dur="0.35s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Line 2: y=148, dur=0.55s, dasharray="16 40" -->
+  <line x1="0" y1="148" x2="1200" y2="148" stroke="#003311" stroke-width="1" stroke-dasharray="16 40">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-56 0" dur="0.55s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Line 3: y=166, dur=0.75s, dasharray="30 20" -->
+  <line x1="0" y1="166" x2="1200" y2="166" stroke="#003311" stroke-width="1" stroke-dasharray="30 20">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-50 0" dur="0.75s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Line 4: y=187, dur=0.95s, dasharray="12 24" -->
+  <line x1="0" y1="187" x2="1200" y2="187" stroke="#003311" stroke-width="1" stroke-dasharray="12 24">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-36 0" dur="0.95s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Line 5: y=210, dur=1.15s, dasharray="40 16" -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="#003311" stroke-width="1" stroke-dasharray="40 16">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-56 0" dur="1.15s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Line 6: y=240, dur=0.45s, dasharray="24 36" -->
+  <line x1="0" y1="240" x2="1200" y2="240" stroke="#003311" stroke-width="1" stroke-dasharray="24 36">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-60 0" dur="0.45s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Line 7: y=268, dur=0.65s, dasharray="18 28" -->
+  <line x1="0" y1="268" x2="1200" y2="268" stroke="#003311" stroke-width="1" stroke-dasharray="18 28">
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-46 0" dur="0.65s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- ── LAYER 2: MOTION TRAIL (behind car, to the left of x=720) ── -->
+  <!-- Trail rects, x=470 to x=620, staggered opacity shimmer -->
+  <rect x="470" y="198" width="150" height="3" fill="url(#trail1)" filter="url(#glow)" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.4s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="490" y="201" width="130" height="3" fill="url(#trail2)" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.4s" begin="0.05s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="500" y="204" width="120" height="3" fill="url(#trail3)" filter="url(#glow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.4s" begin="0.1s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="510" y="195" width="110" height="3" fill="url(#trail4)" filter="url(#glow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.4s" begin="0.15s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="520" y="207" width="100" height="3" fill="url(#trail5)" filter="url(#glow)" opacity="0.5">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.4s" begin="0.2s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="540" y="199" width="80" height="3" fill="url(#trail6)" filter="url(#glow)" opacity="0.4">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.4s" begin="0.25s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="560" y="203" width="60" height="3" fill="url(#trail7)" filter="url(#glow)" opacity="0.3">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.4s" begin="0.3s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="580" y="200" width="40" height="3" fill="url(#trail8)" filter="url(#glow)" opacity="0.2">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.4s" begin="0.35s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ── F1 CAR (top-down silhouette, centered ~x=720, y=200) ── -->
+  <g filter="url(#glowStrong)">
+    <!-- Main chassis (narrow body) -->
+    <rect x="640" y="192" width="120" height="20" fill="#39FF14" stroke="#00FF41" stroke-width="1.5" rx="3"/>
+
+    <!-- Nose cone (pointed right) -->
+    <polygon points="760,197 760,207 800,202" fill="#39FF14" stroke="#00FF41" stroke-width="1.5"/>
+
+    <!-- Front wing (horizontal bar at nose, flaring out) -->
+    <rect x="775" y="187" width="8" height="30" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+    <!-- Front wing endplates -->
+    <rect x="775" y="187" width="20" height="3" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+    <rect x="775" y="214" width="20" height="3" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+
+    <!-- Cockpit halo (thin oval) -->
+    <ellipse cx="700" cy="202" rx="18" ry="7" fill="none" stroke="#00FF41" stroke-width="2"/>
+
+    <!-- Front wheels (left/right, near nose) -->
+    <ellipse cx="755" cy="188" rx="8" ry="5" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+    <ellipse cx="755" cy="216" rx="8" ry="5" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+
+    <!-- Rear wheels (left/right, at back) -->
+    <ellipse cx="655" cy="186" rx="10" ry="6" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+    <ellipse cx="655" cy="218" rx="10" ry="6" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+
+    <!-- Rear wing (horizontal bar at very back) -->
+    <rect x="630" y="184" width="18" height="4" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+    <rect x="630" y="216" width="18" height="4" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+    <rect x="633" y="184" width="3" height="36" fill="#39FF14" stroke="#00FF41" stroke-width="1"/>
+  </g>
+
+  <!-- ── LAYER 3: HUD ── -->
+
+  <!-- TOP-RIGHT SPEEDOMETER (x=900-1180, y=30-110) -->
+  <!-- "limiter: disabled" label -->
+  <text x="1180" y="118" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="11" fill="#008F11" text-anchor="end">limiter: disabled</text>
+
+  <!-- Speed values — stacked, opacity-animated, one visible at a time -->
+  <!-- Text 1: 0420 MPH -->
+  <text x="1180" y="82" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="42" font-weight="700" fill="#39FF14" text-anchor="end" filter="url(#glow)">
+    0420 MPH
+    <animate attributeName="opacity" values="1;0;0;0;0;1" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Text 2: 0840 MPH -->
+  <text x="1180" y="82" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="42" font-weight="700" fill="#39FF14" text-anchor="end" filter="url(#glow)">
+    0840 MPH
+    <animate attributeName="opacity" values="0;1;0;0;0;0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Text 3: 1680 MPH (glitch) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 2 0; -1 0; 1 0; 0 0" dur="0.12s" repeatCount="indefinite"/>
+    <text x="1180" y="82" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="42" font-weight="700" fill="#39FF14" text-anchor="end" filter="url(#glow)">
+      1680 MPH
+      <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.6;1;0.9;1" dur="0.18s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Text 4: 3360 MPH (glitch) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 2 0; -1 0; 1 0; 0 0" dur="0.12s" repeatCount="indefinite"/>
+    <text x="1180" y="82" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="42" font-weight="700" fill="#39FF14" text-anchor="end" filter="url(#glow)">
+      3360 MPH
+      <animate attributeName="opacity" values="0;0;0;1;0;0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.6;1;0.9;1" dur="0.18s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Text 5: infinity MPH (glitch) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 2 0; -1 0; 1 0; 0 0" dur="0.12s" repeatCount="indefinite"/>
+    <text x="1180" y="82" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="42" font-weight="700" fill="#39FF14" text-anchor="end" filter="url(#glow)">
+      &#x221E; MPH
+      <animate attributeName="opacity" values="0;0;0;0;1;0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.6;1;0.9;1" dur="0.18s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- BOTTOM-LEFT TELEMETRY (x=30, y=210-275) -->
+  <!-- GEAR -->
+  <text x="30" y="218" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12">
+    <tspan fill="#008F11">GEAR    : </tspan><tspan fill="#00FF41" filter="url(#glow)">8</tspan>
+  </text>
+
+  <!-- RPM: flickering between 5 values -->
+  <text x="30" y="236" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12">
+    <tspan fill="#008F11">RPM     : </tspan>
+  </text>
+  <!-- RPM value 1 -->
+  <text x="138" y="236" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12" fill="#00FF41" filter="url(#glow)">
+    17,920
+    <animate attributeName="opacity" values="1;0;0;0;0;1" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="0.6s" repeatCount="indefinite"/>
+  </text>
+  <!-- RPM value 2 -->
+  <text x="138" y="236" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12" fill="#00FF41" filter="url(#glow)">
+    18,140
+    <animate attributeName="opacity" values="0;1;0;0;0;0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="0.6s" repeatCount="indefinite"/>
+  </text>
+  <!-- RPM value 3 -->
+  <text x="138" y="236" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12" fill="#00FF41" filter="url(#glow)">
+    18,420
+    <animate attributeName="opacity" values="0;0;1;0;0;0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="0.6s" repeatCount="indefinite"/>
+  </text>
+  <!-- RPM value 4 -->
+  <text x="138" y="236" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12" fill="#00FF41" filter="url(#glow)">
+    18,201
+    <animate attributeName="opacity" values="0;0;0;1;0;0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="0.6s" repeatCount="indefinite"/>
+  </text>
+  <!-- RPM value 5 -->
+  <text x="138" y="236" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12" fill="#00FF41" filter="url(#glow)">
+    18,690
+    <animate attributeName="opacity" values="0;0;0;0;1;0" keyTimes="0;0.2;0.4;0.6;0.8;1" dur="0.6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- DRS -->
+  <text x="30" y="254" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12">
+    <tspan fill="#008F11">DRS     : </tspan><tspan fill="#39FF14" filter="url(#glow)">ENABLED</tspan>
+  </text>
+
+  <!-- LATENCY -->
+  <text x="30" y="272" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12">
+    <tspan fill="#008F11">LATENCY : </tspan><tspan fill="#00FF41" filter="url(#glow)">0.4ms</tspan>
+  </text>
+
+  <!-- STATUS -->
+  <text x="30" y="290" font-family="'JetBrains Mono','IBM Plex Mono',monospace" font-size="12">
+    <tspan fill="#008F11">STATUS  : </tspan><tspan fill="#39FF14" filter="url(#glow)">SHIPPING</tspan>
+  </text>
+</svg>
