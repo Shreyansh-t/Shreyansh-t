@@ -62,7 +62,7 @@
 <br><br>
 
 <code>◜</code>&nbsp; <a href="https://github.com/Shreyansh-t?tab=repositories"><b>Credify</b></a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ Hal Hacks Hackathon build<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ Cal Hacks Hackathon build<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>python</code> &nbsp;·&nbsp; <code>ai-agents</code>
 
 <br>
