@@ -16,9 +16,16 @@
 <tr>
 <td>
 
-<p>I build systems that don't blink. Data Scientist by degree, Systems Engineer by obsession. Whether it's designing highly concurrent bare-metal C++, wiring up autonomous AI agents, or writing low-latency pipelines — I care about high-throughput and smart architecture.</p>
+↳ &nbsp;I build systems that don't blink.<br>
+↳ &nbsp;Data Scientist by degree, Systems Engineer by obsession.<br>
+↳ &nbsp;Bare-metal C++ · autonomous AI agents · low-latency pipelines.<br>
+↳ &nbsp;I care about high-throughput and smart architecture.
 
-<p><code>◈ Currently</code> &nbsp;↳&nbsp; Engineering a secondary AB-tree index directly into DuckDB's core.</p>
+<br><br>
+
+<code>◈ Currently</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;↳ &nbsp;Engineering a secondary AB-tree index directly into DuckDB's core.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;↳ &nbsp;Research @ <a href="https://engineering.buffalo.edu/computer-science-engineering/people/faculty-directory/zhuoyue-zhao.html">Analytical Database Lab</a>, University at Buffalo &nbsp;·&nbsp; Prof. Zhuoyue Zhao.
 
 </td>
 </tr>
