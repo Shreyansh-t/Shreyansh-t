@@ -55,7 +55,7 @@
 
 <br><br>
 
-<code>◜</code>&nbsp; <a href="https://github.com/Shreyansh-t/Boiler-Fixit"><b>Boiler-Fixit &nbsp;/&nbsp; BoilerBridge</b></a><br>
+<code>◜</code>&nbsp; <a href="https://github.com/Shreyansh-t/Boiler-Fixit"><b>Boiler-Fixit &nbsp;/&nbsp; </b></a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ Full-stack campus web application<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>node.js</code> &nbsp;·&nbsp; <code>mongodb</code> &nbsp;·&nbsp; <code>google-apis</code>
 
